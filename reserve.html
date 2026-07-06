@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Reserve a Table | Gourmet Garden</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="reserve-page">
+
+  <!-- PAGE LOADER -->
+  <div id="page-loader">
+    <div class="loader-logo">Visit <span style="color:var(--clr-primary)">Us</span></div>
+    <div class="loader-bar"><div class="loader-fill"></div></div>
+  </div>
+
+  <!-- NAV -->
+  <nav id="nav" aria-label="Main Navigation">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo" aria-label="Home">
+        <div class="logo-fire" aria-hidden="true"></div>
+        Gourmet <span class="logo-accent">Garden</span>
+      </a>
+      <ul class="nav-links" role="list">
+        <li><a href="index.html"   class="nav-link">Home</a></li>
+        <li><a href="about.html"   class="nav-link">About &amp; Reviews</a></li>
+        <li><a href="order.html"   class="nav-link">Order Online</a></li>
+        <li><a href="reserve.html" class="nav-link active">Find Us / Reserve</a></li>
+      </ul>
+      <div class="nav-cta">
+        <a href="order.html" class="btn btn-primary btn-sm">Order Now</a>
+        <button class="hamburger" id="hamburger-btn" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- MOBILE NAV -->
+  <div class="mobile-nav" id="mobile-nav" role="dialog" aria-label="Mobile menu">
+    <button class="mobile-close" id="mobile-close-btn" aria-label="Close menu">✕</button>
+    <a href="index.html">Home</a>
+    <a href="about.html">About &amp; Reviews</a>
+    <a href="order.html">Order Online</a>
+    <a href="reserve.html" class="active">Find Us / Reserve</a>
+    <a href="tel:+919876543210" style="color:var(--clr-secondary); font-family:var(--ff-body); font-size:1.1rem; margin-top:16px;">+91 98765 43210</a>
+  </div>
+
+  <main>
+
+    <!-- ═══ RESERVE HERO ══════════════════════════════════════ -->
+    <section class="reserve-hero" aria-label="Reserve hero">
+      <div class="reserve-hero-inner">
+        <div class="section-eyebrow reveal" style="margin-bottom:20px;">Bandra West, Mumbai</div>
+        <h1 class="reveal delay-1">
+          Come &amp;<br/>
+          <span style="color:var(--clr-primary)">Visit Us</span>
+        </h1>
+        <p class="reveal delay-2">
+          Your table is waiting. Find us in Bandra West or make a quick reservation — we'll have everything ready.
+        </p>
+        <div style="display:flex; gap:16px; margin-top:40px; flex-wrap:wrap;" class="reveal delay-3">
+          <a href="#reservation" class="btn btn-primary magnetic">
+            <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 9v7.5"/></svg>
+            Reserve a Table
+          </a>
+          <a href="https://www.google.com/maps/dir/?api=1&amp;destination=Bandra+West+Mumbai" target="_blank" rel="noopener" class="btn btn-outline magnetic">
+            <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"/></svg>
+            Get Directions
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ LOCATION ══════════════════════════════════════════ -->
+    <section id="location" class="location-section" aria-labelledby="location-heading">
+      <div class="location-inner">
+
+        <!-- Info column -->
+        <div class="location-info reveal-left">
+          <h2 id="location-heading" class="section-eyebrow" style="font-size:1.5rem; font-family:var(--ff-head); font-weight:700; color:var(--clr-text); margin-bottom:40px; letter-spacing:0; text-transform:none; gap:0;">
+            <span style="color:var(--clr-primary);">Our</span> Location
+          </h2>
+
+          <div class="location-info-item">
+            <div class="location-info-icon">📍</div>
+            <div>
+              <div class="location-info-label">Address</div>
+              <div class="location-info-value">Shop 12-14, Foodie Plaza,<br/>Culinary Road, Bandra West,<br/>Mumbai 400050</div>
+            </div>
+          </div>
+
+          <div class="location-info-item">
+            <div class="location-info-icon">📞</div>
+            <div>
+              <div class="location-info-label">Phone</div>
+              <div class="location-info-value">
+                <a href="tel:+919876543210">+91 98765 43210</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="location-info-item">
+            <div class="location-info-icon">🕗</div>
+            <div>
+              <div class="location-info-label">Hours</div>
+              <div class="location-info-value">
+                8:00 AM – 12:00 AM Daily<br/>
+                <span style="font-size:0.8rem; color:var(--clr-text-muted);">(Break 4–7 PM at select outlets)</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="location-info-item">
+            <div class="location-info-icon">🚇</div>
+            <div>
+              <div class="location-info-label">Nearest Metro</div>
+              <div class="location-info-value">Bandra Station (5 min walk)</div>
+            </div>
+          </div>
+
+          <div class="location-actions">
+            <a href="https://www.google.com/maps/dir/?api=1&amp;destination=Bandra+West+Mumbai" target="_blank" rel="noopener" class="btn btn-primary">
+              <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 6.75V15m6-6v8.25m.503 3.498l4.875-2.437c.381-.19.622-.58.622-1.006V4.82c0-.836-.88-1.38-1.628-1.006l-3.869 1.934c-.317.159-.69.159-1.006 0L9.503 3.252a1.125 1.125 0 00-1.006 0L3.622 5.689C3.24 5.88 3 6.27 3 6.695V19.18c0 .836.88 1.38 1.628 1.006l3.869-1.934c.317-.159.69-.159 1.006 0l4.994 2.497c.317.158.69.158 1.006 0z"/></svg>
+              Get Directions
+            </a>
+            <a href="https://wa.me/919876543210?text=Hi%21+I%27d+like+to+reserve+a+table+at+Gourmet+Garden." target="_blank" rel="noopener" class="btn btn-green">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+              Book via WhatsApp
+            </a>
+          </div>
+        </div>
+
+        <!-- Map column -->
+        <div class="map-container reveal-right">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3771.218!2d72.8258!3d19.0607!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c9159981881b%3A0xc34cc51d7c35f0!2sBandra%20West%2C%20Mumbai%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1680000000000!5m2!1sen!2sin"
+            width="100%" height="100%"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Gourmet Garden location">
+          </iframe>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ═══ RESERVATION FORM ═══════════════════════════════════ -->
+    <section id="reservation" class="reservation-section" aria-labelledby="reservation-heading">
+      <div class="reservation-layout">
+
+        <!-- Info side -->
+        <div class="reservation-info reveal-left">
+          <div class="section-eyebrow">Book in Advance</div>
+          <h2 id="reservation-heading" class="reservation-title">
+            Plan Your Visit<br/><span style="color:var(--clr-primary)">in Advance</span>
+          </h2>
+          <p class="reservation-desc">
+            Skip the wait — let us know you're coming and we'll have your table ready.
+            We'll confirm via WhatsApp within minutes.
+          </p>
+          <div class="reservation-perks">
+            <div class="reservation-perk">
+              <div class="perk-check">✓</div>
+              Priority seating for reserved guests
+            </div>
+            <div class="reservation-perk">
+              <div class="perk-check">✓</div>
+              WhatsApp confirmation in minutes
+            </div>
+            <div class="reservation-perk">
+              <div class="perk-check">✓</div>
+              Free cancellation anytime
+            </div>
+            <div class="reservation-perk">
+              <div class="perk-check">✓</div>
+              Groups of any size welcome
+            </div>
+          </div>
+
+          <!-- Hours quick view -->
+          <div style="background:var(--clr-surface); border:1px solid var(--clr-border); border-radius:var(--radius-md); padding:24px; margin-top:8px;">
+            <div class="location-info-label" style="margin-bottom:16px;">Opening Hours</div>
+            <div style="display:flex; flex-direction:column; gap:8px;">
+              <div style="display:flex; justify-content:space-between; font-size:0.875rem;">
+                <span style="color:var(--clr-text-dim);">Monday – Sunday</span>
+                <span style="font-weight:600; color:var(--clr-green);">8 AM – 12 AM</span>
+              </div>
+              <div style="display:flex; justify-content:space-between; font-size:0.875rem;">
+                <span style="color:var(--clr-text-dim);">All Public Holidays</span>
+                <span style="font-weight:600; color:var(--clr-green);">Open</span>
+              </div>
+              <div style="display:flex; justify-content:space-between; font-size:0.875rem;">
+                <span style="color:var(--clr-text-dim);">Afternoon Break</span>
+                <span style="font-weight:600; color:var(--clr-text-muted);">4–7 PM (select)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Form side -->
+        <div class="form-card reveal-right">
+          <h3 class="form-card-title">Quick Reservation</h3>
+          <p class="form-card-sub">Fill in the details — we'll confirm via WhatsApp shortly.</p>
+
+          <form id="reservation-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" novalidate>
+            <input type="hidden" name="_subject" value="Table Reservation — Gourmet Garden" />
+
+            <div class="form-grid">
+
+              <div class="form-group">
+                <input type="text" id="res-name" name="name" class="form-input" placeholder=" " required autocomplete="name" />
+                <label for="res-name" class="form-label">Your Name *</label>
+              </div>
+
+              <div class="form-group">
+                <input type="tel" id="res-phone" name="phone" class="form-input" placeholder=" " required autocomplete="tel" />
+                <label for="res-phone" class="form-label">WhatsApp Number *</label>
+              </div>
+
+              <div class="form-group">
+                <select id="res-guests" name="guests" class="form-select" required>
+                  <option value="" disabled selected></option>
+                  <option value="1">1 Guest</option>
+                  <option value="2">2 Guests</option>
+                  <option value="3">3 Guests</option>
+                  <option value="4">4 Guests</option>
+                  <option value="5">5 Guests</option>
+                  <option value="6">6 Guests</option>
+                  <option value="7+">7+ Guests</option>
+                </select>
+                <label for="res-guests" class="form-label" style="top:14px; position:absolute; pointer-events:none; font-size:0.85rem; color:var(--clr-text-muted);">Number of Guests *</label>
+              </div>
+
+              <div class="form-group">
+                <select id="res-time" name="time" class="form-select" required>
+                  <option value="" disabled selected></option>
+                  <option>Breakfast (8–11 AM)</option>
+                  <option>Lunch (12–3 PM)</option>
+                  <option>Dinner (7–10 PM)</option>
+                  <option>Late Night (10 PM–12 AM)</option>
+                </select>
+                <label for="res-time" class="form-label" style="top:14px; position:absolute; pointer-events:none; font-size:0.85rem; color:var(--clr-text-muted);">Preferred Time *</label>
+              </div>
+
+              <div class="form-group full">
+                <textarea id="res-note" name="note" class="form-textarea" placeholder=" " rows="3"></textarea>
+                <label for="res-note" class="form-label">Special Request (optional)</label>
+              </div>
+
+            </div>
+
+            <div class="form-messages">
+              <div id="form-success" class="form-success"></div>
+              <div id="form-error" class="form-error"></div>
+            </div>
+
+            <button type="submit" class="btn btn-primary form-submit-btn" id="res-submit-btn">
+              <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+              <span>Confirm Reservation</span>
+            </button>
+          </form>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-logo">Gourmet <span style="color:var(--clr-primary)">Garden</span></div>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About &amp; Reviews</a>
+        <a href="order.html">Order Online</a>
+        <a href="reserve.html">Find Us / Reserve</a>
+      </div>
+      <p class="footer-copy">© 2024 Gourmet Garden — Bandra West, Mumbai | Demo Website</p>
+    </div>
+  </footer>
+
+  <!-- MOBILE STICKY BAR -->
+  <div id="sticky-bar" role="navigation">
+    <a href="tel:+919876543210" class="sticky-btn sticky-call">
+      <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"/></svg>
+      Call
+    </a>
+    <a href="order.html" class="sticky-btn sticky-order">
+      <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M6 2 3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+      Order Online
+    </a>
+  </div>
+
+  <!-- WHATSAPP FLOAT -->
+  <a id="whatsapp-float" href="https://wa.me/919876543210?text=Hi%21+I%27d+like+to+reserve+a+table+at+Gourmet+Garden." target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>
